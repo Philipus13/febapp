@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.febapp.febapp.activity.Booking"
+    tools:showIn="@layout/activity_booking">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <EditText
+        android:hint="Nama Penerima"
+        android:id="@+id/namaPenerima"
+        android:drawableRight="@drawable/ic_email"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <EditText
+            android:hint="Alamat Lengkap"
+            android:id="@+id/alamat"
+            android:drawableRight="@drawable/ic_email"
+            android:inputType="textPostalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <EditText
+            android:hint="No Telepon"
+            android:id="@+id/telp"
+            android:drawableRight="@drawable/ic_email"
+            android:inputType="textPhonetic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <EditText
+            android:hint="Kode Pos"
+            android:id="@+id/kodpos"
+            android:drawableRight="@drawable/ic_email"
+            android:inputType="textPhonetic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Total Estimasi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/totalHarga" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/list_cart"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:divider="@color/list_divider"
+                android:dividerHeight="2dp"
+                android:listSelector="@drawable/list_row_selector" />
+            <Button
+                android:id="@+id/btnProses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_logut_bg"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="Proses"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+
+                />
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

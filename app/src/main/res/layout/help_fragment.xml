@@ -1,0 +1,314 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFrag">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:id="@+id/mis"
+            android:text="Miscellaneous"
+            android:layout_marginTop="20dp"
+            android:textColor="#69f0ae"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+        <View
+            android:id="@+id/VerticalLine"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/mis"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#ffffff"
+            android:id="@+id/username_layout"
+            android:layout_below="@id/VerticalLine">
+
+            <TextView
+                android:id="@+id/usernames"
+                android:text="About"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/next1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/usernames"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/VerticalLine1"
+            android:layout_width="match_parent"
+            android:layout_below="@id/username_layout"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#ffffff"
+            android:id="@+id/useremail_layout"
+            android:layout_below="@id/VerticalLine1">
+
+            <TextView
+                android:id="@+id/useremails"
+                android:text="Frequently Asked Question"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/next2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/useremails"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/VerticalLine2"
+            android:layout_width="match_parent"
+            android:layout_below="@id/useremail_layout"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#ffffff"
+            android:id="@+id/changepass_layout"
+            android:layout_below="@id/VerticalLine2">
+
+            <TextView
+                android:id="@+id/userchanges"
+                android:text="Term And Conditions"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/next3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/userchanges"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/VerticalLine3"
+            android:layout_width="match_parent"
+            android:layout_below="@id/changepass_layout"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#ffffff"
+            android:id="@+id/privacylayout"
+            android:layout_below="@id/VerticalLine3">
+
+            <TextView
+                android:id="@+id/privacy"
+                android:text="Privacy Policy"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/next6"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/privacy"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/VerticalLine8"
+            android:layout_width="match_parent"
+            android:layout_below="@id/privacylayout"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+
+
+        <TextView
+            android:id="@+id/CS"
+            android:text="Customer Service"
+            android:textColor="#69f0ae"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/VerticalLine8"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+        <View
+            android:id="@+id/VerticalLine4"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/CS"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#ffffff"
+            android:id="@+id/Emaillayout"
+            android:layout_below="@id/VerticalLine4">
+
+            <TextView
+                android:id="@+id/emails"
+                android:text="Email"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/next4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/emails"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/VerticalLine5"
+            android:layout_width="match_parent"
+            android:layout_below="@id/Emaillayout"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="#ffffff"
+            android:id="@+id/usercall"
+            android:layout_below="@id/VerticalLine5">
+
+            <TextView
+                android:id="@+id/usercalls"
+                android:text="Call"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/next5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/usercalls"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/VerticalLine6"
+            android:layout_width="match_parent"
+            android:layout_below="@id/usercall"
+            android:layout_height="3dp"
+            android:background="#aaa" />
+
+        <TextView
+            android:id="@+id/anakacara"
+            android:text="Anak Acara \u00A9 2016"
+            android:textColor="#69f0ae"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/VerticalLine6"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:textSize="24dp" />
+
+        <TextView
+            android:text="Version 1.0.0"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/anakacara"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+

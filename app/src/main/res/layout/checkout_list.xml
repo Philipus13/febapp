@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="0dp"
+    android:background="#ffffff"
+    android:paddingRight="0dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:descendantFocusability="blocksDescendants"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="#ffffff"
+        android:id="@+id/card"
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="#efc5c5">
+
+
+        <LinearLayout
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_nice"
+                    android:id="@+id/imageViewHero"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_marginRight="-20dp"
+                    android:layout_marginTop="-20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewJudul"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="judul"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/quantity"
+                        android:text="50 barang"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/price"
+                        android:text="Rp 500000"/>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_below="@+id/card"
+            android:id="@+id/card2"
+            app:cardCornerRadius="2dp"
+            app:cardBackgroundColor="#ffffff"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="#efc5c5">
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biaya Kirim"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biaya Total "/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kirim"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="Rp 5000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="Rp 500000 "/>
+            </LinearLayout>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    <View
+        android:id="@+id/VerticalLine1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/card2"
+        android:layout_height="3dp"
+        android:background="#aaa" />
+
+
+
+</RelativeLayout>

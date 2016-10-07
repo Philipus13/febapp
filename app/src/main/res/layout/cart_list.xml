@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="0dp"
+    android:background="#ffffff"
+    android:paddingRight="0dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:descendantFocusability="blocksDescendants"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="#ffffff"
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="#efc5c5">
+
+
+        <LinearLayout
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_nice"
+                    android:id="@+id/imageViewHero"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_marginRight="-20dp"
+                    android:layout_marginTop="-20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_height="0dp"
+                        android:id="@+id/textViewJudul"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="judul"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+
+                        android:id="@+id/price"
+                        android:text="Rp 500000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+
+                        android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/min"
+                            android:text="-"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/quantity"
+                            android:text="50"
+                            />
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/plus"
+                            android:text="+"/>
+                    </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:layout_width="37dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_error"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:id="@+id/delete" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

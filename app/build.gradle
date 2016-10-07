@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.febapp.febapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 9
+        versionName "1.0"
+        multiDexEnabled true
+    }
+//    dexOptions {
+//        incremental true
+//        javaMaxHeapSize "4g"
+//    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//repositories {
+//    mavenCentral()
+//    maven {
+//        url 'http://dl.bintray.com/amulyakhare/maven'
+//    }
+//}
+
+repositories {
+    jcenter {
+        url "http://jcenter.bintray.com/"
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile group: 'cz.msebera.android', name: 'httpclient', version: '4.4.1.2'
+    compile('com.github.afollestad.material-dialogs:commons:0.8.5.7@aar') {
+        transitive = true
+    }
+
+//    compile "cz.msebera.android:httpclient:4.4.1.2"
+//    compile 'com.android.support:appcompat-v7:23.2.1'
+//    compile 'com.android.support:design:23.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.volley:volley:1.0.0'
+//    compile 'com.android.support:support-v4:23.2.1'
+//    compile 'com.android.support:recyclerview-v7:23.2.1'
+//    compile 'com.android.support:cardview-v7:23.2.1'
+
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+//    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    //    compile 'com.nineoldandroids:library:2.4.0'
+    //    compile 'com.daimajia.slider:library:1.1.5@aar'
+
+}

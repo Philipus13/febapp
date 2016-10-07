@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_map"
+        android:orderInCategory="200"
+        android:title="Maps"
+        android:icon="@drawable/ic_map_24dp"
+        app:showAsAction="ifRoom"
+        ></item>
+
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:icon="@android:drawable/ic_menu_search"-->
+        <!--app:showAsAction="always|collapseActionView"-->
+        <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
+        <!--android:title="Search"/>-->
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_profil"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/ic_bookmark"
+            android:visible="true"
+            android:title="Bookmark" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_bookmark"
+            android:visible="true"
+            android:title="Cart" />
+        <item
+            android:id="@+id/nav_gambar"
+            android:icon="@drawable/ic_bookmark"
+            android:visible="true"
+            android:title="Gambar" />
+        <item
+            android:id="@+id/nav_notify"
+            android:icon="@drawable/ic_notify"
+            android:visible="true"
+            android:title="Notify" />
+        <!--<item-->
+            <!--android:id="@+id/nav_ticket"-->
+            <!--android:icon="@drawable/common_google_signin_btn_icon_light_pressed"-->
+            <!--android:title="Ticket" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_remind"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Remind Me" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_notif"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Notification" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_settings"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Settings" />-->
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="Help" />
+
+    </group>
+
+
+
+</menu>

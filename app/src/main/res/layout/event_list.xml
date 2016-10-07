@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="0dp"
+    android:background="#ffffff"
+    android:paddingRight="0dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:descendantFocusability="blocksDescendants"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="#ffffff"
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="#efc5c5">
+
+
+        <LinearLayout
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_nice"
+                    android:id="@+id/imageViewHero"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_marginRight="-20dp"
+                    android:layout_marginTop="-20dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_share_24dp"
+                    android:background="@drawable/roundcorner"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/shareButton"
+                    android:layout_alignBottom="@+id/love"
+                    android:layout_toLeftOf="@+id/love"
+                    android:layout_toStartOf="@+id/love" />
+
+                <CheckBox
+                    android:id="@+id/love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffebee"
+
+                    android:button="@android:drawable/btn_star"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:checked="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="asdfasdfasdf"
+                android:textColor="#88000000"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="asdfasdfasdf"
+                android:textColor="#88000000"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:id="@+id/calendar">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    >
+                    <TextView
+                        android:text="Start Date"
+                        android:textSize="15dp"
+                        android:textColor="#2962ff"
+                        android:paddingRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:text="start date"
+                        android:id="@+id/startdate"
+                        android:textSize="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#2962ff"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    >
+                    <TextView
+                        android:text="End Date"
+                        android:textSize="15dp"
+                        android:textColor="#f44336"
+                        android:paddingRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:text="end date"
+                        android:id="@+id/enddate"
+                        android:textSize="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_width="match_parent"
+                        android:textColor="#f44336"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

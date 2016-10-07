@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+    <!--android:id="@+id/action_checkbox"-->
+    <!--app:actionViewClass="android.widget.CheckBox"-->
+    <!--android:actionLayout="@layout/custom_toolbar_detail_event"-->
+    <!--android:title="Bookmark"-->
+    <!--app:showAsAction="always" />-->
+    <item
+        android:id="@+id/testAction"
+        android:title=""
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+</menu>
